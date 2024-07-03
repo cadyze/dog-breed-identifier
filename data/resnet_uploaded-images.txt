@@ -1,0 +1,83 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 5 key-value pairs.
+Below are 5 of them:
+ 1 key:                 maltese_02.jpg  label:                    maltese
+ 2 key:           border_collie_01.jpg  label:              border collie
+ 3 key:                    frog_01.jpg  label:                       frog
+ 4 key:                 maltese_01.jpg  label:                    maltese
+ 5 key:                     cup_01.jpg  label:                        cup
+
+     MATCH:
+
+          border_collie_01.jpg: 
+Real:              border collie   Classifier:                  border collie
+
+                   frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog
+
+                    cup_01.jpg: 
+Real:                        cup   Classifier:                            cup
+
+ NOT A MATCH:
+
+                maltese_02.jpg: 
+Real:                    maltese   Classifier:                       shih-tzu
+
+                maltese_01.jpg: 
+Real:                    maltese   Classifier:                       shih-tzu
+
+# Total Images 5 # Matches: 3 # NOT Matches: 2
+
+     MATCH:
+
+          border_collie_01.jpg: 
+Real:              border collie   Classifier:                  border collie  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   frog_01.jpg: 
+Real:                       frog   Classifier:           tree frog, tree-frog  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    cup_01.jpg: 
+Real:                        cup   Classifier:                            cup  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                maltese_02.jpg: 
+Real:                    maltese   Classifier:                       shih-tzu  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                maltese_01.jpg: 
+Real:                    maltese   Classifier:                       shih-tzu  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 5 # Matches: 3 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  5  N Dog Images:  3  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  33.3
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  5  N Dog Images:  3  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  33.3
+
+
+*** Results Summary for CNN Model Architecture  RESNET ***
+N Images            :   5
+N Dog Images        :   3
+N Non-Dog Images    :   2
+PCT_MATCH           : 60.0
+PCT_CORRECT_DOGS    : 100.0
+PCT_CORRECT_BREED   : 33.33333333333333
+PCT_CORRECT_NOTDOGS : 100.0
+
+INCORRECT Dog Breed Assignments:
+Real:                    maltese   Classifier:                       shih-tzu
+Real:                    maltese   Classifier:                       shih-tzu
+
+** Total Elapsed Runtime: 0:0:4
