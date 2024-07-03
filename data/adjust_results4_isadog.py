@@ -85,19 +85,6 @@ def adjust_results4_isadog(results_dic, dogfile):
           print("** Warning: Key=", line, 
                 "already exists in results_dic with value =", 
                 dognames_dic[line])
-
-        # # split each line into separate dog names and add them to the dictionary
-        # diff_names = line.split(",")
-        # for name in diff_names:
-        #   name = name.strip()
-
-        #   # add to dogname dict if doesn't exist
-        #   if name not in dognames_dic:
-        #     dognames_dic[name] = 1
-        #   else:
-        #     print("** Warning: Key=", name, 
-        #           "already exists in results_dic with value =", 
-        #           dognames_dic[name])
           
         # read next line
         line = infile.readline()
@@ -115,6 +102,4 @@ def adjust_results4_isadog(results_dic, dogfile):
       #     break
       
       value.extend((a_is_dog, c_is_dog))
-
-
     None
